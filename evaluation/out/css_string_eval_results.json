@@ -1,0 +1,530 @@
+{
+  "test_binary": "css",
+  "generated_at": 1759820325.9026499,
+  "results": [
+    {
+      "function": "main.generateKey",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "main.main.authMiddleware.func3",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 6,
+      "total": 6,
+      "missing": []
+    },
+    {
+      "function": "main.HandleLogin",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 7,
+      "total": 7,
+      "missing": []
+    },
+    {
+      "function": "main.randomPassword",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 0,
+      "total": 1,
+      "missing": [
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}|;:,.<>?/"
+      ]
+    },
+    {
+      "function": "main.decrypt",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.getDB",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 2,
+      "final_count": 4,
+      "total": 4,
+      "missing": []
+    },
+    {
+      "function": "main.HandleRegister",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 15,
+      "total": 15,
+      "missing": []
+    },
+    {
+      "function": "main.createUser",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.loginUser",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.addView",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.getUserProfile",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.updateStyleColor",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.getUserViews",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.setOTP",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.getOTP",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "main.getSecret",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 2,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "main.main.cspMiddleware.func2",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "main.main.func1",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "main.main",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 12,
+      "total": 13,
+      "missing": [
+        ":8080"
+      ]
+    },
+    {
+      "function": "main.HandleMe",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "main.HandleGetViews",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "main.HandleGetProfile",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 5,
+      "missing": [
+        "anonymous"
+      ]
+    },
+    {
+      "function": "main.HandleStyleColorUpdate",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 7,
+      "total": 7,
+      "missing": []
+    },
+    {
+      "function": "main.HandleUnlockRequest",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 4,
+      "missing": []
+    },
+    {
+      "function": "jro.sg_tisc_secure_vault_countle.Validate",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 0,
+      "total": 4,
+      "missing": [
+        "add",
+        "sub",
+        "mul",
+        "div"
+      ]
+    },
+    {
+      "function": "main.HandleCheckSecret",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 9,
+      "total": 10,
+      "missing": [
+        "\\x00"
+      ]
+    },
+    {
+      "function": "main.HandleUnlockAttempt",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 7,
+      "total": 7,
+      "missing": []
+    },
+    {
+      "function": "main.HandleLogin",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 7,
+      "total": 7,
+      "missing": []
+    },
+    {
+      "function": "main.main.authMiddleware.func3",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 6,
+      "total": 6,
+      "missing": []
+    },
+    {
+      "function": "main.generateKey",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "main.decrypt",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.randomPassword",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 0,
+      "total": 1,
+      "missing": [
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}|;:,.<>?/"
+      ]
+    },
+    {
+      "function": "main.HandleRegister",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 15,
+      "total": 15,
+      "missing": []
+    },
+    {
+      "function": "main.getDB",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 4,
+      "missing": []
+    },
+    {
+      "function": "main.createUser",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.loginUser",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.addView",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.getUserProfile",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.getUserViews",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.updateStyleColor",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.setOTP",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.getOTP",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 2,
+      "missing": [
+        "OTP or auth level is negative"
+      ]
+    },
+    {
+      "function": "main.main.cspMiddleware.func2",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "main.getSecret",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 2,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "main.main",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 12,
+      "total": 13,
+      "missing": [
+        ":8080"
+      ]
+    },
+    {
+      "function": "main.main.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "main.HandleMe",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "main.HandleGetProfile",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 5,
+      "missing": [
+        "anonymous"
+      ]
+    },
+    {
+      "function": "main.HandleGetViews",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "main.HandleStyleColorUpdate",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 7,
+      "total": 7,
+      "missing": []
+    },
+    {
+      "function": "main.HandleUnlockRequest",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 4,
+      "missing": []
+    },
+    {
+      "function": "jro.sg_tisc_secure_vault_countle.Validate",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 0,
+      "total": 4,
+      "missing": [
+        "add",
+        "sub",
+        "mul",
+        "div"
+      ]
+    },
+    {
+      "function": "main.HandleCheckSecret",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 9,
+      "total": 10,
+      "missing": [
+        "\\x00"
+      ]
+    },
+    {
+      "function": "main.HandleUnlockAttempt",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 7,
+      "total": 7,
+      "missing": []
+    }
+  ],
+  "totals": {
+    "initial": 14,
+    "final": 102,
+    "total": 110
+  },
+  "ida_91_totals": {
+    "initial": 11,
+    "final": 101,
+    "total": 110
+  }
+}

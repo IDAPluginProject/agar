@@ -1,0 +1,1227 @@
+[
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "/healthz"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "/api/reload"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "GET"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "/api/stop"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "POST"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "/api/status"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "GET"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "/api/config"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "GET"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "/api/config"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "PUT"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "/favicon.ico"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "GET"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "/static/"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "/static/"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "GET"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+    "string": "/"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers.func1",
+    "string": "/static/"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiReload",
+    "string": "strictConfig"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiReload",
+    "string": "api request [/api/reload]"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiReload.func1",
+    "string": "api response [/api/reload], code [%d]"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiReload",
+    "string": "reload frpc proxy config error: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiReload",
+    "string": "reload frpc proxy config error: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiReload",
+    "string": "reload frpc proxy config error: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiReload",
+    "string": "success reload conf"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiStop",
+    "string": "api request [/api/stop]"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiStop.func1",
+    "string": "api response [/api/stop], code [%d]"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client.NewProxyStatusResp",
+    "string": "tcp"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client.NewProxyStatusResp",
+    "string": "udp"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiStatus",
+    "string": "http request [/api/status]"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiStatus.func1",
+    "string": "http response [/api/status]"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig",
+    "string": "http get request [/api/config]"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig.func1",
+    "string": "http get response [/api/config], code [%d]"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig",
+    "string": "frpc has no config file path"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig",
+    "string": "%s"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig",
+    "string": "load frpc config file error: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
+    "string": "http put request [/api/config]"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig.func1",
+    "string": "http put response [/api/config], code [%d]"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
+    "string": "read request body error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
+    "string": "%s"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
+    "string": "body can't be empty"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
+    "string": "%s"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
+    "string": "write content to frpc config file error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\admin_api.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
+    "string": "%s"
+  },
+  {
+    "file": ".\\src\\frpc\\connector.go",
+    "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.Open",
+    "string": "quic"
+  },
+  {
+    "file": ".\\src\\frpc\\connector.go",
+    "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.Open",
+    "string": "fail to build tls configuration, err: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\connector.go",
+    "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.Open",
+    "string": "frp"
+  },
+  {
+    "file": ".\\src\\frpc\\connector.go",
+    "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.realConnect",
+    "string": "wss"
+  },
+  {
+    "file": ".\\src\\frpc\\connector.go",
+    "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.realConnect",
+    "string": "fail to build tls configuration, err: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\connector.go",
+    "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.realConnect",
+    "string": "fail to parse proxy url"
+  },
+  {
+    "file": ".\\src\\frpc\\connector.go",
+    "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.realConnect",
+    "string": "websocket"
+  },
+  {
+    "file": ".\\src\\frpc\\connector.go",
+    "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.realConnect",
+    "string": "tcp"
+  },
+  {
+    "file": ".\\src\\frpc\\connector.go",
+    "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.realConnect",
+    "string": "wss"
+  },
+  {
+    "file": ".\\src\\frpc\\connector.go",
+    "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.realConnect",
+    "string": "tcp"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.handleReqWorkConn",
+    "string": "start new connection to server error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.handleReqWorkConn",
+    "string": "error during NewWorkConn authentication: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.handleReqWorkConn",
+    "string": "work connection write to server error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.handleReqWorkConn",
+    "string": "work connection closed before response StartWorkConn message: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.handleReqWorkConn",
+    "string": "StartWorkConn contains error: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.handleNewProxyResp",
+    "string": "[%s] start error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.handleNewProxyResp",
+    "string": "[%s] start proxy success"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.handleNatHoleResp",
+    "string": "dispatch NatHoleResp message to related proxy error"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.handlePong",
+    "string": "pong message contains error: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.handlePong",
+    "string": "receive heartbeat from server"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.heartbeatWorker.func1",
+    "string": "send heartbeat to server"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.heartbeatWorker.func1",
+    "string": "error during ping authentication: %v, skip sending ping message"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.heartbeatWorker.func2",
+    "string": "heartbeat timeout"
+  },
+  {
+    "file": ".\\src\\frpc\\control.go",
+    "function": "github.com_fatedier_frp_client._ptr_Control.worker",
+    "string": "control message dispatcher exited"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client.init",
+    "string": "frp"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client.init",
+    "string": "QUIC_GO_DISABLE_RECEIVE_BUFFER_WARNING"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client.init",
+    "string": "true"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client.init",
+    "string": "QUIC_GO_DISABLE_ECN"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client.init",
+    "string": "QUIC_GO_DISABLE_ECN"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client.init",
+    "string": "true"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.Run",
+    "string": "init virtual network controller error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.Run.func1",
+    "string": "virtual network controller start..."
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.Run.func1",
+    "string": "virtual network controller exit with error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.Run.func2",
+    "string": "admin server listen on %s"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.Run.func2",
+    "string": "admin server exit with error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.Run",
+    "string": "login to the server failed: %v. With loginFailExit enabled, no additional retries will be attempted"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.keepControllerWorking.func1",
+    "string": "control is closed and try another loop"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.login",
+    "string": "%s"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.login",
+    "string": "%s"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.login",
+    "string": "runID"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.login",
+    "string": "login to server success, get run id [%s]"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.loopLoginUntilSuccess.func1",
+    "string": "try to connect to server..."
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.loopLoginUntilSuccess.func1",
+    "string": "connect to server error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.loopLoginUntilSuccess.func1",
+    "string": "ssh-tunnel"
+  },
+  {
+    "file": ".\\src\\frpc\\service.go",
+    "function": "github.com_fatedier_frp_client._ptr_Service.loopLoginUntilSuccess.func1",
+    "string": "new control error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health.NewMonitor",
+    "string": "http"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health.NewMonitor",
+    "string": "http://"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health.NewMonitor",
+    "string": "/"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health.NewMonitor",
+    "string": "/"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health._ptr_Monitor.checkWorker",
+    "string": "do one health check success"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health._ptr_Monitor.checkWorker",
+    "string": "health check status change to success"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health._ptr_Monitor.checkWorker",
+    "string": "do one health check failed: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health._ptr_Monitor.checkWorker",
+    "string": "health check status change to failed"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doCheck",
+    "string": "tcp"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doCheck",
+    "string": "http"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doTCPCheck",
+    "string": "tcp"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doHTTPCheck",
+    "string": "GET"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doHTTPCheck",
+    "string": "Host"
+  },
+  {
+    "file": ".\\src\\frpc\\health\\health.go",
+    "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doHTTPCheck",
+    "string": "do http health check, StatusCode is [%d] not 2xx"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "handle tcp work connection, useEncryption: %t, useCompression: %t"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "create encryption stream error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "127.0.0.1"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "tcp"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "tcp"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "handle by plugin: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "handle by plugin finished"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "connect to local service [%s:%d] error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "join connections, localConn(l[%s] r[%s]) workConn(l[%s] r[%s])"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "write proxy protocol header to local conn error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "join connections closed"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+    "string": "join connections errors: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_manager.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_Manager.StartProxy",
+    "string": "proxy [%s] not found"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_manager.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_Manager.UpdateAll",
+    "string": "proxy removed: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_manager.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_Manager.UpdateAll",
+    "string": "proxy added: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_wrapper.go",
+    "function": "github.com_fatedier_frp_client_proxy.NewWrapper",
+    "string": "enable health check monitor"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_wrapper.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.SetRunningStatus",
+    "string": "status not wait start, ignore start message"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_wrapper.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.SetRunningStatus",
+    "string": "%s"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_wrapper.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.checkWorker",
+    "string": "change status from [%s] to [%s]"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_wrapper.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.checkWorker",
+    "string": "change status from [%s] to [%s]"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_wrapper.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.statusNormalCallback",
+    "string": "health check success"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_wrapper.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.statusFailedCallback",
+    "string": "health check failed"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\proxy_wrapper.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.InWorkConn",
+    "string": "start a new work connection, localAddr: %s remoteAddr: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.Run",
+    "string": "udp"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn",
+    "string": "incoming a new work connection for sudp proxy, %s"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn",
+    "string": "create encryption stream error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func3",
+    "string": "frpc sudp proxy is closed"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func3",
+    "string": "read from workConn for sudp error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func3",
+    "string": "reader goroutine for sudp work connection closed: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func4.1",
+    "string": "writer goroutine for sudp work connection closed"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func4",
+    "string": "frpc send udp package to frpc visitor, [udp local: %v, remote: %v], [tcp work conn local: %v, remote: %v]"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func4",
+    "string": "frpc send ping message to frpc visitor"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func4",
+    "string": "sudp work write error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func5",
+    "string": "heartbeat goroutine for sudp work connection closed"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\sudp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func5",
+    "string": "frpc sudp proxy is closed"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.Run",
+    "string": "udp"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn",
+    "string": "incoming a new work connection for udp proxy, %s"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn",
+    "string": "create encryption stream error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func2",
+    "string": "read from workConn for udp error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func2.1",
+    "string": "get udp package from workConn: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func2",
+    "string": "reader goroutine for udp work connection closed: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func3.1",
+    "string": "writer goroutine for udp work connection closed"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func3",
+    "string": "send udp package to workConn: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func3",
+    "string": "send ping message to udp workConn"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func3",
+    "string": "udp work write error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\udp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func4",
+    "string": "heartbeat goroutine for udp work connection closed"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+    "string": "xtcp read from workConn error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+    "string": "nathole prepare start"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+    "string": "nathole prepare error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+    "string": "nathole prepare success, nat type: %s, behavior: %s, addresses: %v, assistedAddresses: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+    "string": "nathole exchange info start"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+    "string": "nathole exchange info error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+    "string": "get natHoleRespMsg, sid [%s], protocol [%s], candidate address %v, assisted address %v, detectBehavior: %+v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+    "string": "make hole error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+    "string": "establishing nat hole connection successful, sid [%s], remoteAddr [%s]"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+    "string": "kcp"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByKCP",
+    "string": "udp"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByKCP",
+    "string": "udp"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByKCP",
+    "string": "dial udp error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByKCP",
+    "string": "create kcp connection from udp connection error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByKCP",
+    "string": "create mux session error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByKCP",
+    "string": "accept connection error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByQUIC",
+    "string": "create tls config error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByQUIC",
+    "string": "frp"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByQUIC",
+    "string": "dial quic error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByQUIC",
+    "string": "quic accept connection error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\proxy\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByQUIC",
+    "string": "quic accept stream error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\stcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.Run",
+    "string": "tcp"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\stcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.worker",
+    "string": "stcp local listener closed"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\stcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.internalConnWorker",
+    "string": "stcp internal listener closed"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\stcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.handleConn",
+    "string": "get a new stcp user connection"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\stcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.handleConn",
+    "string": "send newVisitorConnMsg to server error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\stcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.handleConn",
+    "string": "get newVisitorConnRespMsg error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\stcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.handleConn",
+    "string": "start new visitor connection error: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\stcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.handleConn",
+    "string": "create encryption stream error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.Run",
+    "string": "udp"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.Run",
+    "string": "sudp ResolveUDPAddr error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.Run",
+    "string": "udp"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.Run",
+    "string": "listen udp port %s error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.Run",
+    "string": "sudp start to work, listen on %s"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.dispatcher",
+    "string": "frpc sudp visitor proxy is closed"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.dispatcher",
+    "string": "frpc sudp visitor proxy is closed"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.dispatcher",
+    "string": "newVisitorConn to frps error: %v, try to reconnect"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker",
+    "string": "starting sudp proxy worker"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1",
+    "string": "read from workconn for user udp conn error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1",
+    "string": "frpc visitor get ping message from frpc"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1.2",
+    "string": "frpc visitor get udp packet from workConn: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1",
+    "string": "reader goroutine for udp work connection closed"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func2",
+    "string": "sender goroutine for udp work connection closed: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func2",
+    "string": "send udp package to workConn: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func2",
+    "string": "sender goroutine for udp work connection closed"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func2",
+    "string": "sender goroutine for udp work connection closed: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func2",
+    "string": "send udp package to workConn: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker",
+    "string": "sudp worker is closed"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.getNewVisitorConn",
+    "string": "frpc connect frps error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.getNewVisitorConn",
+    "string": "frpc send newVisitorConnMsg to frps error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.getNewVisitorConn",
+    "string": "frpc read newVisitorConnRespMsg error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.getNewVisitorConn",
+    "string": "start new visitor connection error: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\sudp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.getNewVisitorConn",
+    "string": "create encryption stream error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\visitor_manager.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.keepVisitorsRunning",
+    "string": "gracefully shutdown visitor manager"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\visitor_manager.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.keepVisitorsRunning",
+    "string": "try to start visitor [%s]"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\visitor_manager.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.startVisitor",
+    "string": "new visitor error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\visitor_manager.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.startVisitor",
+    "string": "start error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\visitor_manager.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.startVisitor",
+    "string": "start visitor success"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\visitor_manager.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.UpdateAll",
+    "string": "visitor removed: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\visitor_manager.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.UpdateAll",
+    "string": "visitor added: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\visitor_manager.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.TransferConn",
+    "string": "visitor [%s] not found"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.Run",
+    "string": "kcp"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.Run",
+    "string": "tcp"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.worker",
+    "string": "xtcp local listener closed"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.internalConnWorker",
+    "string": "xtcp internal listener closed"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.keepTunnelOpenWorker",
+    "string": "keepTunnelOpenWorker try to check tunnel..."
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.keepTunnelOpenWorker",
+    "string": "keepTunnelOpenWorker get tunnel connection error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.keepTunnelOpenWorker",
+    "string": "keepTunnelOpenWorker check success"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
+    "string": "get a new xtcp user connection"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
+    "string": "open tunnel error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
+    "string": "try to transfer connection to visitor: %s"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
+    "string": "transfer connection to visitor %s error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
+    "string": "create encryption stream error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
+    "string": "join connections closed"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
+    "string": "join connections errors: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.openTunnel",
+    "string": "open tunnel timeout"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.openTunnel",
+    "string": "get tunnel connection error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "makeNatHole start"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "nathole precheck error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "nathole prepare start"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "nathole prepare error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "nathole prepare success, nat type: %s, behavior: %s, addresses: %v, assistedAddresses: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "nathole exchange info start"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "nathole exchange info error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "get natHoleRespMsg, sid [%s], protocol [%s], candidate address %v, assisted address %v, detectBehavior: %+v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "make hole error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "establishing nat hole connection successful, sid [%s], remoteAddr [%s]"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+    "string": "init tunnel session error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_KCPTunnelSession.Init",
+    "string": "udp"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_KCPTunnelSession.Init",
+    "string": "udp"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_KCPTunnelSession.Init",
+    "string": "dial udp error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_KCPTunnelSession.Init",
+    "string": "create kcp connection from udp connection error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_KCPTunnelSession.Init",
+    "string": "initial client session error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_QUICTunnelSession.Init",
+    "string": "create tls config error: %v"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_QUICTunnelSession.Init",
+    "string": "frp"
+  },
+  {
+    "file": ".\\src\\frpc\\visitor\\xtcp.go",
+    "function": "github.com_fatedier_frp_client_visitor._ptr_QUICTunnelSession.Init",
+    "string": "dial quic error: %v"
+  }
+]

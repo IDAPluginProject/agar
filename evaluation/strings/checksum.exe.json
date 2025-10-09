@@ -1,0 +1,66 @@
+[
+  {
+    "function": "main.main",
+    "string": "Check sum: %d + %d = "
+  },
+  {
+    "function": "main.main",
+    "string": "%d\\n"
+  },
+  {
+    "function": "main.main",
+    "string": "%s\\n"
+  },
+  {
+    "function": "main.main",
+    "string": "Not a valid answer..."
+  },
+    {
+    "function": "main.main",
+    "string": "Try again! ;)\\n"
+  },
+  {
+    "function": "main.main",
+    "string":"Good math!!!\\n------------------------------\\n"
+  },
+  {
+    "function": "main.main",
+    "string":"Checksum: "
+  },
+  {
+    "function": "main.main",
+    "string":"Not a valid checksum..."
+  },
+  {
+    "function": "main.main",
+    "string":"chacha20poly1305: bad key length"
+  },
+  {
+    "function": "main.main",
+    "string":"Maybe it's time to analyze the binary! ;)"
+  },
+  {
+    "function": "main.main",
+    "string":"0123456789abcdef"
+  },
+  {
+    "function": "main.main",
+    "string":"Fail to get path..."
+  },
+  {
+    "function": "main.main",
+    "string":"\\\\REAL_FLAREON_FLAG.JPG"
+  },
+  {
+    "function": "main.main",
+    "string":"Fail to write file..."
+  },
+  {
+    "function": "main.main",
+    "string":"Noice!!"
+  },
+  {
+    "function": "main.a",
+    "string":"cQoFRQErX1YAVw1zVQdFUSxfAQNRBXUNAxBSe15QCVRVJ1pQEwd/WFBUAlElCFBFUnlaB1ULByRdBEFdfVtWVA=="
+  }
+]

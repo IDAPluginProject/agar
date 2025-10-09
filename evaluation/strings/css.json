@@ -1,0 +1,687 @@
+[
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleLogin",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleLogin",
+    "string": "password"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleLogin",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleLogin",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleLogin",
+    "string": "Invalid username or password"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleLogin",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleLogin",
+    "string": "message"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleLogin",
+    "string": "Login successful"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleLogin",
+    "string": "token"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "password"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "secret"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "bio"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "Username must be alphanumeric"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "Username must be at least 5 characters long"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "Password must be between 8 and 64 characters long"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "admin_"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "Admin account for "
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "FLAG"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "Failed to create admin account: "
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "message"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "User created successfully"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.HandleRegister",
+    "string": "token"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.main.authMiddleware.func3",
+    "string": "Authorization"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.main.authMiddleware.func3",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.main.authMiddleware.func3",
+    "string": "anonymous"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.main.authMiddleware.func3",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.main.authMiddleware.func3",
+    "string": "Authorization header is required"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.main.authMiddleware.func3",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.main.authMiddleware.func3",
+    "string": "Invalid token"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\auth.go",
+    "function": "main.main.authMiddleware.func3",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\crypto.go",
+    "function": "main.generateKey",
+    "string": "FLAG"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\crypto.go",
+    "function": "main.generateKey",
+    "string": "FLAG environment variable is not set"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\crypto.go",
+    "function": "main.decrypt",
+    "string": "token must be of form <12 byte nonce><GCM encrypted username>"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\crypto.go",
+    "function": "main.randomPassword",
+    "string": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}|;:,.<>?/"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.getDB",
+    "string": "sqlite3"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.getDB",
+    "string": "./secure_vault.db"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.getDB",
+    "string": "CREATE TABLE IF NOT EXISTS users (\n\t\tusername TEXT NOT NULL PRIMARY KEY,\n\t\tpassword TEXT NOT NULL,\n\t\tbio TEXT NOT NULL,\n\t\tstyle_color TEXT DEFAULT '#ffffff',\n\t\totp INTEGER DEFAULT 0,\n\t\tauth_level INTEGER DEFAULT 0,\n\t\tsecret TEXT,\n\t\tpow_a INTEGER DEFAULT 0\n\t);"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.getDB",
+    "string": "CREATE TABLE IF NOT EXISTS views (\n\t\tusername TEXT NOT NULL REFERENCES users(username),\n\t\tviewer TEXT NOT NULL,\n\t\ttimestamp DATETIME DEFAULT CURRENT_TIMESTAMP\n\t);"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.createUser",
+    "string": "INSERT INTO users (username, password, bio, secret) VALUES (?, ?, ?, ?)"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.loginUser",
+    "string": "SELECT password FROM users WHERE username = ?"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.addView",
+    "string": "INSERT INTO views (username, viewer) VALUES (?, ?);"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.getUserProfile",
+    "string": "SELECT username, bio, style_color FROM users WHERE username = ?"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.getUserViews",
+    "string": "SELECT username, viewer, timestamp FROM views WHERE username = ?"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.updateStyleColor",
+    "string": "UPDATE users SET style_color = ? WHERE username = ?"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.setOTP",
+    "string": "UPDATE users SET otp = ?, auth_level = ? WHERE username = ?"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.getOTP",
+    "string": "SELECT otp, auth_level FROM users WHERE username = ?"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.getOTP",
+    "string": "OTP or auth level is negative"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.getSecret",
+    "string": "SELECT secret FROM users WHERE username = ?"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\db.go",
+    "function": "main.getSecret",
+    "string": "secret not set for user"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main.cspMiddleware.func2",
+    "string": "Content-Security-Policy"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main.cspMiddleware.func2",
+    "string": "default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self'; connect-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; frame-ancestors 'none'; base-uri 'none'; form-action 'self'"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/api"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/login"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/register"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/me"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/views"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/profile/:username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/update_style"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/vault/unlock/request"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/vault/unlock/attempt"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/vault/check"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "build/client/assets"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": "/assets"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main.func1",
+    "string": "build/client/index.html"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main.func1",
+    "string": "Error reading index file: %v"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main.func1",
+    "string": "text/html; charset=utf-8"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\main.go",
+    "function": "main.main",
+    "string": ":8080"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleMe",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleMe",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleMe",
+    "string": "Username not found in context"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleMe",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleMe",
+    "string": "Invalid username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleMe",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleMe",
+    "string": "profile"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetProfile",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetProfile",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetProfile",
+    "string": "Username is required"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetProfile",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetProfile",
+    "string": "anonymous"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetProfile",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetProfile",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetProfile",
+    "string": "profile"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetViews",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetViews",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleGetViews",
+    "string": "views"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleStyleColorUpdate",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleStyleColorUpdate",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleStyleColorUpdate",
+    "string": "Username not found in context"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleStyleColorUpdate",
+    "string": "style_color"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleStyleColorUpdate",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleStyleColorUpdate",
+    "string": "Color is required"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleStyleColorUpdate",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleStyleColorUpdate",
+    "string": "message"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\profile.go",
+    "function": "main.HandleStyleColorUpdate",
+    "string": "Style color updated successfully"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "Invalid request body"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "Invalid OTP!"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "message"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "Unlock successful, secret is "
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "message"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockAttempt",
+    "string": "Correct OTP. However, as you are accessing sensitive information, a second OTP has been sent to your device. Please refresh the page to enter the new OTP."
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockRequest",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockRequest",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockRequest",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockRequest",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockRequest",
+    "string": "OTP:"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleUnlockRequest",
+    "string": "auth_level"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "username"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "ADMIN_BOT_ADDRESS"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "Admin bot address not set"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "tcp"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "Failed to connect to admin bot"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "Failed to generate token"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "error"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "Failed to read response from admin bot"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "message"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\vault.go",
+    "function": "main.HandleCheckSecret",
+    "string": "\\x00"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\countle\\main.go",
+    "function": "jro.sg_tisc_secure_vault_countle.Validate",
+    "string": "add"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\countle\\main.go",
+    "function": "jro.sg_tisc_secure_vault_countle.Validate",
+    "string": "sub"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\countle\\main.go",
+    "function": "jro.sg_tisc_secure_vault_countle.Validate",
+    "string": "mul"
+  },
+  {
+    "file": ".\\code\\evaluation\\src\\css\\countle\\main.go",
+    "function": "jro.sg_tisc_secure_vault_countle.Validate",
+    "string": "div"
+  }
+]

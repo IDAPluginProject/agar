@@ -1,0 +1,126 @@
+[
+  {
+    "function": "main.determineAudioResource",
+    "string": "assets/flag.mp3"
+  },
+  {
+    "function": "main.determineAudioResource",
+    "string": "assets/music"
+  },
+  {
+    "function": "main.determineAudioResource",
+    "string": "*.mp3"
+  },
+  {
+    "function": "main.main",
+    "string": "http://localhost:3000"
+  },
+  {
+    "function": "main.main",
+    "string": "http://frontend:3000"
+  },
+  {
+    "function": "main.main",
+    "string": "GET"
+  },
+  {
+    "function": "main.main",
+    "string": "POST"
+  },
+  {
+    "function": "main.main",
+    "string": "PUT"
+  },
+  {
+    "function": "main.main",
+    "string": "DELETE"
+  },
+  {
+    "function": "main.main",
+    "string": "OPTIONS"
+  },
+  {
+    "function": "main.main",
+    "string": "Origin"
+  },
+  {
+    "function": "main.main",
+    "string": "Content-Type"
+  },
+  {
+    "function": "main.main",
+    "string": "Accept"
+  },
+  {
+    "function": "main.main",
+    "string": "Authorization"
+  },
+  {
+    "function": "main.main",
+    "string": "X-Metrics-Size"
+  },
+  {
+    "function": "main.main",
+    "string": "Content-Length"
+  },
+  {
+    "function": "main.main",
+    "string": "/health"
+  },
+  {
+    "function": "main.main.func1",
+    "string": "status"
+  },
+  {
+    "function": "main.main.func1",
+    "string": "ok"
+  },
+  {
+    "function": "main.main.func1",
+    "string": "message"
+  },
+  {
+    "function": "main.main.func1",
+    "string": "Backend API service is running"
+  },
+  {
+    "function": "main.main",
+    "string": "/"
+  },
+  {
+    "function": "main.main.func2",
+    "string": "Error reading metrics: %v"
+  },
+  {
+    "function": "main.main.func2",
+    "string": "error"
+  },
+  {
+    "function": "main.main.func2",
+    "string": "Invalid metrics data"
+  },
+  {
+    "function": "main.main.func2",
+    "string": "Error parsing metrics: %v"
+  },
+  {
+    "function": "main.main.func2",
+    "string": "No MP3 files found"
+  },
+  {
+    "function": "main.main",
+    "string": "PORT"
+  },
+  {
+    "function": "main.main",
+    "string": "8080"
+  },
+  {
+    "function": "main.main",
+    "string": ":"
+  },
+  {
+    "function": "main.main",
+    "string": "Failed to start server:"
+  }
+]

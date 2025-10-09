@@ -1,0 +1,56 @@
+{
+  "test_binary": "checksum.exe",
+  "generated_at": 1759283215.3699782,
+  "results": [
+    {
+      "function": "main.a",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.main",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 15,
+      "final_count": 15,
+      "total": 15,
+      "missing": []
+    },
+    {
+      "function": "main.a",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "main.main",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 10,
+      "final_count": 12,
+      "total": 15,
+      "missing": [
+        "Try again! ;)\\n",
+        "%d\\n",
+        "%s\\n"
+      ]
+    }
+  ],
+  "totals": {
+    "initial": 16,
+    "final": 16,
+    "total": 16
+  },
+  "ida_91_totals": {
+    "initial": 11,
+    "final": 13,
+    "total": 16
+  }
+}
