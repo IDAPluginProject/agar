@@ -3,7 +3,8 @@ import sys
 
 cur_dir = os.path.dirname(__file__)
 
-sys.path = [f"{cur_dir}/../../interfaces"] + sys.path
+sys.path.append(f"{cur_dir}/../../src/agar")
+
 if sys.platform == "win32":
     os.environ["IDAUSR"] = cur_dir
 else:

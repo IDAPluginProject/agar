@@ -5,8 +5,8 @@ import json
 
 cur_dir = os.path.dirname(__file__)
 
-sys.path.append(f"{cur_dir}/../strings")
-sys.path.append(f"{cur_dir}/../func_typing")
+sys.path.append(f"{cur_dir}/../src/agar")
+sys.path.append(f"{cur_dir}/../src/agar/scripts")
 
 if sys.platform == "win32":
     os.environ["IDAUSR"] = cur_dir
