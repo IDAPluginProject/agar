@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Interface detector",
+        "description": "Detects and retypes Go interfaces",
+        "path": "interface_detector.py"
+    },
+    {
+        "name": "Stringer",
+        "description": "Detects and retypes Go strings",
+        "path": "go_stringer.py"
+    },
+    {
+        "name": "Function retyper",
+        "description": "Retypes Go stdlib functions",
+        "path": "set_stdlib_funcproto.py"
+    }
+]

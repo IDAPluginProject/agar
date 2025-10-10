@@ -3,8 +3,8 @@ import ida_kernwin
 import ida_hexrays
 import ida_typeinf
 import os
-from go_util.itab_typedef_maker import find_interface_implementations, replace_type
-from go_util.itab_parser import parse_itab
+from agar.itab_typedef_maker import find_interface_implementations, replace_type
+from agar.itab_parser import parse_itab
 
 
 def get_selected_member(form):
@@ -13,8 +13,6 @@ def get_selected_member(form):
     place = out.loc.place()
     place: ida_kernwin.tiplace_t = place.as_tiplace_t(place)
     ordinal = place.ordinal
-    globals()["place"] = place
-    globals()["out"] = out
 
     if "\x01%" not in out.text or "\x02%" not in out.text:
         if out.text:
@@ -70,7 +68,7 @@ class InterfaceTypeChooser(ida_kernwin.Choose):
 
 interface_implementations = None
 
-class InterfaceSpecializer(idaapi.action_handler_t):
+class AGAR(idaapi.action_handler_t):
     def __init__(self):
         idaapi.action_handler_t.__init__(self)
 
@@ -109,15 +107,18 @@ class InterfaceSpecializer(idaapi.action_handler_t):
             return idaapi.AST_ENABLE_FOR_WIDGET
         return idaapi.AST_DISABLE_FOR_WIDGET
 
-ACTION_NAME = "golang:interface_specializer"
-ACTION_LABEL = "Specialize Interface"
+ACTION_NAME = "golang:agar"
+ACTION_LABEL = "[AGAR] Specialize interface"
 
-class InterfaceSpecializerPlugin(idaapi.plugin_t):
+
+from agar.script_manager import scripts, register_keybinds, show_scripts_chooser
+
+class AGARPlugin(idaapi.plugin_t):
     flags = 0
-    comment = 'Sets concrete types for interfaces.'
-    help = 'Sets concrete types for interfaces.'
-    wanted_name = "Go Interface Specializer"
-    wanted_hotkey = ""
+    comment = 'Assist Go Analysis and Reversing'
+    help = 'Assist Go Analysis and Reversing'
+    wanted_name = "AGAR"
+    wanted_hotkey = "Ctrl+Shift+G"
     action_desc = None
     action2_desc = None
 
@@ -125,7 +126,7 @@ class InterfaceSpecializerPlugin(idaapi.plugin_t):
         self.action_desc =  idaapi.action_desc_t(
             ACTION_NAME,
             ACTION_LABEL,
-            InterfaceSpecializer(),
+            AGAR(),
             None,
             self.comment,
             -1
@@ -133,16 +134,21 @@ class InterfaceSpecializerPlugin(idaapi.plugin_t):
         ida_kernwin.register_action(self.action_desc)
         self.hook = Hooks()
         self.hook.hook()
-        print("[GO Interface Specializer] Plugin loaded!")
+        register_keybinds()
+        print("[AGAR] Plugin loaded!")
 
         return idaapi.PLUGIN_KEEP
     
     def term(self):
+        print("[AGAR] Plugin unloaded!")
         ida_kernwin.unregister_action(self.action_desc.name)
         self.hook.unhook()
     
     def run(self, arg):
-        pass
+        if scripts:
+            show_scripts_chooser(scripts)
+        else:
+            ida_kernwin.warning("No scripts to display.")
 
 def PLUGIN_ENTRY():
-    return InterfaceSpecializerPlugin()
+    return AGARPlugin()
