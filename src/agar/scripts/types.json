@@ -234,7 +234,7 @@
     "runtime.cmpstring": "void __golang runtime_cmpstring()",
     "internal_bytealg.Count": "void __golang internal_bytealg_Count()",
     "internal_bytealg.CountString": "void __golang internal_bytealg_CountString()",
-    "runtime.memequal": "void __golang runtime_memequal(void *p1, void *p2, uintptr len)",
+    "runtime.memequal": "bool __golang runtime_memequal(void *p1, void *p2, uintptr len)",
     "runtime.memequal_varlen": "void __golang runtime_memequal_varlen()",
     "internal_bytealg.Index": "void __golang internal_bytealg_Index()",
     "internal_bytealg.IndexString": "void __golang internal_bytealg_IndexString()",

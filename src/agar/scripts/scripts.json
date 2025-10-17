@@ -1,5 +1,10 @@
 [
     {
+        "name": "Function retyper",
+        "description": "Retypes Go stdlib functions",
+        "path": "set_stdlib_funcproto.py"
+    },
+    {
         "name": "Interface detector",
         "description": "Detects and retypes Go interfaces",
         "path": "interface_detector.py"
@@ -10,8 +15,8 @@
         "path": "go_stringer.py"
     },
     {
-        "name": "Function retyper",
-        "description": "Retypes Go stdlib functions",
-        "path": "set_stdlib_funcproto.py"
+        "name": "itab parser",
+        "description": "Parses and reconstructs itab structures",
+        "path": "parse_itabs.py"
     }
 ]

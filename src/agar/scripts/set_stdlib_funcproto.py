@@ -12,8 +12,6 @@ data = json.load(open(os.path.join(cwd, "types.json"), "r"))
 
 @functools.lru_cache(maxsize=None)
 def parse_type(type_str):
-    if type_str == "void":
-        return type_str
     remains = ""
     if " " in type_str:
         type_ = type_str.rsplit(" ", 1)[0]
@@ -24,6 +22,8 @@ def parse_type(type_str):
         for bw in bad_words:
             remains = remains.replace(f" {bw}", f" _{bw}").replace(f"*{bw}", f"*_{bw}")
         type_str = type_
+    if type_str == "void":
+        return type_str + remains
     if type_str == "runtime_tmpBuf":
         return "void" + remains
     res = idc.parse_decl(type_str, idaapi.PT_SIL)
@@ -45,7 +45,10 @@ def main(yap=True):
             func_not_exist += 1
             continue
         total_count += 1
-        ret_val = func_decl.split(" ")[0]
+        if "__golang" not in func_decl:
+            fail_count += 1
+            continue
+        ret_val = func_decl.split("__golang")[0].strip()
         ret_val = parse_type(ret_val)
         if not ret_val:
             fail_count += 1
