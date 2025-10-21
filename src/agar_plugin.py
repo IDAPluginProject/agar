@@ -2,8 +2,8 @@ import idaapi
 import ida_kernwin
 import ida_hexrays
 import ida_typeinf
-import os
-from agar.itab_typedef_maker import find_interface_implementations, replace_type
+import idc
+from agar.itab_typedef_maker import find_interface_implementations, replace_type, replace_local_var_type
 from agar.itab_parser import parse_itab
 
 
@@ -36,11 +36,25 @@ def get_selected_member(form):
             return struct, str(field.type), field.offset
     return None
 
+def get_selected_lvar(form):
+    vu = ida_hexrays.get_widget_vdui(form)
+    if vu:
+        vu.get_current_item(ida_hexrays.USE_KEYBOARD)
+        focusitem = vu.item.e if vu.item.is_citem() else None
+        if not focusitem:
+            return None
+        if focusitem.op == ida_hexrays.cot_var:
+            return focusitem
+
 class Hooks(idaapi.UI_Hooks):
     def finish_populating_widget_popup(self, form, popup):
         type = idaapi.get_widget_type(form)
         if type == idaapi.BWN_TILIST:
             if not get_selected_member(form):
+                return
+            idaapi.attach_action_to_popup(form, popup, ACTION_NAME, '')
+        if type == idaapi.BWN_PSEUDOCODE:
+            if not get_selected_lvar(form):
                 return
             idaapi.attach_action_to_popup(form, popup, ACTION_NAME, '')
 
@@ -75,10 +89,22 @@ class AGAR(idaapi.action_handler_t):
     def activate(self, ctx):
         global interface_implementations
         form = ctx.widget
-        member = get_selected_member(form)
-        if not member:
-            return
-        struct, type, offset = member
+        is_lvar = ida_kernwin.get_widget_type(form) == ida_kernwin.BWN_PSEUDOCODE
+        if not is_lvar:
+            member = get_selected_member(form)
+            if not member:
+                return
+            struct, type, offset = member
+        else:
+            lvar = get_selected_lvar(form)
+            if not lvar:
+                return
+            ea = idc.here()
+            cfunc = ida_hexrays.decompile(ea)
+            type = str(lvar.type)
+            name = lvar.dstr()
+            handle = ida_hexrays.open_pseudocode(ea, 0)
+
         if interface_implementations is None:
             interface_implementations = find_interface_implementations()
         if type not in interface_implementations:
@@ -96,14 +122,19 @@ class AGAR(idaapi.action_handler_t):
         _, iface_ea = selected_iface
         _, iface_type = parse_itab(iface_ea)
         iface_type, _ = iface_type
-        replace_type(struct, offset, iface_type)
+
+        if is_lvar:
+            replace_local_var_type(cfunc, name, iface_type)
+            handle.refresh_view(True)
+        else:
+            replace_type(struct, offset, iface_type)
 
         return 1
 
     def update(self, ctx):
         # Only enable if a struct is highlighted in Local Types
         widget = ida_kernwin.get_current_widget()
-        if widget and ida_kernwin.get_widget_type(widget) == ida_kernwin.BWN_TILIST:
+        if widget and ida_kernwin.get_widget_type(widget) in [ida_kernwin.BWN_TILIST, ida_kernwin.BWN_PSEUDOCODE]:
             return idaapi.AST_ENABLE_FOR_WIDGET
         return idaapi.AST_DISABLE_FOR_WIDGET
 
