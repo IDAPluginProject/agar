@@ -64,13 +64,14 @@ class InterfaceTypeChooser(ida_kernwin.Choose):
         ida_kernwin.Choose.__init__(
             self,
             "Choose an interface implementation",
-            [["Interface Implementation"]],
-            flags=ida_kernwin.Choose.CH_MODAL,
+            [["Interface Implementation", 100]]
         )
         self.items = interfaces
 
     def OnGetLine(self, n):
         name, _ = self.items[n]
+        if isinstance(name, str):
+            return [name]
         return [name.get_type_name()[len("iface_"):]]
     
     def OnGetEA(self, n):
