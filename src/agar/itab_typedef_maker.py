@@ -1,12 +1,11 @@
-import secrets
 import idaapi
-import ida_hexrays
 import ida_typeinf
 
 import sys, os
 sys.path = [os.path.dirname(__file__)] + sys.path
 
 import itab_parser
+import trie
 
 def replace_type(struct: ida_typeinf.tinfo_t, offset: int, new_type: ida_typeinf.tinfo_t):
     type_name = struct.get_type_name()
@@ -22,24 +21,6 @@ def replace_type(struct: ida_typeinf.tinfo_t, offset: int, new_type: ida_typeinf
             struct.set_named_type(idaapi.get_idati(), type_name, ida_typeinf.NTF_REPLACE)
             return True
     return False
-
-class local_var_type_modifier_t(ida_hexrays.user_lvar_modifier_t):
-    def __init__(self, mapping):
-        ida_hexrays.user_lvar_modifier_t.__init__(self)
-        self.mapping = mapping
-
-    def modify_lvars(self, lvars):
-        for lvar in lvars.lvvec:
-            if lvar.name in self.mapping:
-                lvar.type = self.mapping[lvar.name]
-        return True
-
-def replace_local_var_type(cfunc: ida_hexrays.cfunc_t, name: str, new_type: ida_typeinf.tinfo_t):
-    mod = secrets.token_hex(4)
-    ida_hexrays.rename_lvar(cfunc.entry_ea, name, f"{name}_{mod}")
-    modifier = local_var_type_modifier_t({f"{name}_{mod}": new_type})
-    ida_hexrays.modify_user_lvars(cfunc.entry_ea, modifier)
-    ida_hexrays.rename_lvar(cfunc.entry_ea, f"{name}_{mod}", name)
 
 def get_all_types() -> list[str]:
     types = []
@@ -60,38 +41,10 @@ def get_all_types() -> list[str]:
     
     return list(set(types))
 
-def find_suffix_matches(A: dict[str, list], B: list[str]) -> dict[str, list]:
-    # Build a trie for all suffixes in A (reversed strings)
-    class TrieNode:
-        def __init__(self):
-            self.children = {}
-            self.values = []
-
-    root = TrieNode()
-    for a, values in A.items():
-        node = root
-        for ch in reversed(a):
-            node = node.children.setdefault(ch, TrieNode())
-        node.values.extend(values)
-
-    result = {}
-    for b in B:
-        node = root
-        matches = []
-        for ch in reversed(b.rstrip("_1234567890")):
-            if ch not in node.children:
-                break
-            node = node.children[ch]
-            if node.values:
-                matches.extend(node.values)
-        if matches:
-            result[b] = matches
-    return result
-
 def find_interface_implementations():
     itabs = itab_parser.parse_all_itabs()
     types = get_all_types()
-    return find_suffix_matches(itabs, types)
+    return trie.find_suffix_matches(itabs, types)
 
 def update_all_typedefs(implementations, yap=False):  
     yap and print("Type Interfaces:")

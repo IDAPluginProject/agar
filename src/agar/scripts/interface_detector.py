@@ -1,8 +1,12 @@
-import secrets
 import ida_hexrays
 import ida_typeinf
 import idc, idaapi
 from typing import Optional, Tuple
+
+import sys, os
+sys.path = [os.path.dirname(os.path.dirname(__file__))] + sys.path
+
+from lvar_utils import replace_local_var_type
 
 
 def get_interface_type(is_ptr):
@@ -12,17 +16,6 @@ def get_interface_type(is_ptr):
         interface_type.create_ptr(interface_type)
     return interface_type
 
-
-class type_modifier_t(ida_hexrays.user_lvar_modifier_t):
-    def __init__(self, mapping):
-        ida_hexrays.user_lvar_modifier_t.__init__(self)
-        self.mapping = mapping
-
-    def modify_lvars(self, lvars):
-        for lvar in lvars.lvvec:
-            if lvar.name in self.mapping:
-                lvar.type = self.mapping[lvar.name]
-        return True
 
 class cvisitor(ida_hexrays.ctree_visitor_t):
     def __init__(self, yap=True):
@@ -86,46 +79,38 @@ def apply_interface_detector(func, yap=True):
     prev = []
     skip = []
     for i in range(100):
-        # Failed to set type more than 5 times in a row, give up
-        if len(prev) > 5:
-            prev = prev[-5:]
+        # Failed to set type more than 3 times in a row, give up
+        if len(prev) > 3:
+            prev = prev[-3:]
             if len(set(prev)) == 1:
                 skip += [prev[0]]
                 yap and print("Skipping", prev[0])
         yap and print("Iteration", i)
         c = cvisitor(yap)
         c.apply_to(func.body, None)
-        type_modifications = {}
-        var_names = []
         yap and print(c.vars)
-        mod = secrets.token_hex(4)
+        changed = False
         if c.to_undefine:
             for var_name, var_type in c.to_undefine.items():
                 if var_name in skip:
                     continue
-                type_modifications[var_name + mod] = var_type
-                var_names.append(var_name)
+                replace_local_var_type(func, var_name, var_type)
+                changed = True
+                prev += [var_name]
                 break
         else:
             for var_name, (type_name, is_ptr) in c.vars.items():
                 if var_name in skip:
                     continue
-                type_modifications[var_name + mod] = get_interface_type(is_ptr)
-                var_names.append(var_name)
+                replace_local_var_type(func, var_name, get_interface_type(is_ptr))
+                changed = True
+                prev += [var_name]
                 break
-
-        if not var_names:
+        if not changed:
             yap and print("Done")
             return c.interface_vars
 
-        func_ea = func.entry_ea
-        assert len(var_names) == 1 and len(type_modifications) == 1, f"Expected exactly one var to modify, got {var_names}"
-        var_name = var_names[0]
-        ida_hexrays.rename_lvar(func_ea, var_name, var_name + mod)
-        ida_hexrays.modify_user_lvars(func_ea, type_modifier_t(type_modifications))
-        ida_hexrays.rename_lvar(func_ea, var_name + mod, var_name)
-        func = ida_hexrays.decompile(func_ea, flags=ida_hexrays.DECOMP_NO_CACHE)
-        prev += [var_name]
+        func = ida_hexrays.decompile(func.entry_ea, flags=ida_hexrays.DECOMP_NO_CACHE)
 
 def main():
     func = ida_hexrays.decompile(idc.here(), flags=ida_hexrays.DECOMP_NO_CACHE)

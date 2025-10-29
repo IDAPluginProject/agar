@@ -3,8 +3,10 @@ import ida_kernwin
 import ida_hexrays
 import ida_typeinf
 import idc
-from agar.itab_typedef_maker import find_interface_implementations, replace_type, replace_local_var_type
+from agar.itab_typedef_maker import find_interface_implementations, replace_type
+from agar.lvar_utils import replace_local_var_type
 from agar.itab_parser import parse_itab
+import agar.user_interface
 
 
 def get_selected_member(form):
@@ -143,8 +145,6 @@ ACTION_NAME = "golang:agar"
 ACTION_LABEL = "[AGAR] Specialize interface"
 
 
-from agar.script_manager import scripts, register_keybinds, show_scripts_chooser
-
 class AGARPlugin(idaapi.plugin_t):
     flags = 0
     comment = 'Assist Go Analysis and Reversing'
@@ -166,7 +166,6 @@ class AGARPlugin(idaapi.plugin_t):
         ida_kernwin.register_action(self.action_desc)
         self.hook = Hooks()
         self.hook.hook()
-        register_keybinds()
         print("[AGAR] Plugin loaded!")
 
         return idaapi.PLUGIN_KEEP
@@ -177,10 +176,7 @@ class AGARPlugin(idaapi.plugin_t):
         self.hook.unhook()
     
     def run(self, arg):
-        if scripts:
-            show_scripts_chooser(scripts)
-        else:
-            ida_kernwin.warning("No scripts to display.")
+        agar.user_interface.show_form()
 
 def PLUGIN_ENTRY():
     return AGARPlugin()

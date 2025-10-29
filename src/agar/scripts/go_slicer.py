@@ -1,6 +1,10 @@
 import ida_hexrays, ida_typeinf, idc, idaapi
 from typing import Optional
-import secrets
+
+import sys, os
+sys.path = [os.path.dirname(os.path.dirname(__file__))] + sys.path
+
+from lvar_utils import replace_local_var_type
 
 class Ref:
     ea: int
@@ -50,24 +54,6 @@ class AsgRef(Ref):
     
     def __repr__(self) -> str:
         return f"AsgRef({hex(self.ea)}: {self.expr.dstr()})"
-
-class local_var_type_modifier_t(ida_hexrays.user_lvar_modifier_t):
-    def __init__(self, mapping):
-        ida_hexrays.user_lvar_modifier_t.__init__(self)
-        self.mapping = mapping
-
-    def modify_lvars(self, lvars):
-        for lvar in lvars.lvvec:
-            if lvar.name in self.mapping:
-                lvar.type = self.mapping[lvar.name]
-        return True
-
-def replace_local_var_type(cfunc: ida_hexrays.cfunc_t, name: str, new_type: ida_typeinf.tinfo_t):
-    mod = secrets.token_hex(4)
-    ida_hexrays.rename_lvar(cfunc.entry_ea, name, f"{name}_{mod}")
-    modifier = local_var_type_modifier_t({f"{name}_{mod}": new_type})
-    ida_hexrays.modify_user_lvars(cfunc.entry_ea, modifier)
-    ida_hexrays.rename_lvar(cfunc.entry_ea, f"{name}_{mod}", name)
 
 class cvisitor(ida_hexrays.ctree_visitor_t):
     def __init__(self):
