@@ -11,10 +11,17 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(SCRIPT_DIR, "out")
+PREV_DIR = os.path.join(SCRIPT_DIR, "prev")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 def colorize(line, color_code):
     return f"{color_code}{line}\033[0m"
+
+# ANSI color codes
+COLOR_GREEN = "\033[92m"
+COLOR_RED = "\033[91m"
+COLOR_YELLOW = "\033[93m"
+COLOR_RESET = "\033[0m"
 
 
 def run_test(test_file, bin_path, function_name, strings):
@@ -38,9 +45,9 @@ def run_test(test_file, bin_path, function_name, strings):
 def main():
     test_binary = sys.argv[1]
     bin_path_base = os.path.join(SCRIPT_DIR, "bin", test_binary)
-    with open(f"./strings/{test_binary}.json", "r") as f:
+    with open(f"./strings/{test_binary.removesuffix("_unstripped")}.json", "r") as f:
         test_data = json.load(f)
-
+    
     collated_test_data = collections.defaultdict(list)
     for entry in test_data:
         collated_test_data[entry["function"]].append(entry["string"])
@@ -114,7 +121,7 @@ def main():
             })
             if not data.get("success") or data.get("missing"):
                 print(ida_version, function, data, flush=True)
-
+    parsed_results = sorted(parsed_results, key=lambda x: (x["function"], x["ida_version"]))
     ida_92_results = [d for d in parsed_results if d.get("ida_version") == "92"]
     # Compute overall success rates
     total_initial = sum(d.get("initial_count", 0) for d in ida_92_results)
@@ -132,6 +139,58 @@ def main():
     print(f"Completed {len(collated_test_data)} functions in {time.time() - st:.2f}s with {max_workers} workers.")
     print(f"Initial success rate: {initial_rate:.2f}% ({total_initial}/{total_total})")
     print(f"Final success rate:   {final_rate:.2f}% ({total_final}/{total_total})")
+
+    # Compare with previous results if available
+    prev_json_path = os.path.join(PREV_DIR, f"{test_binary}_string_eval_results.json")
+    if os.path.exists(prev_json_path):
+        try:
+            with open(prev_json_path, "r", encoding="utf-8") as f:
+                prev_results_payload = json.load(f)
+            
+            # Build a map from function name to previous result
+            prev_results_map = {}
+            for result in prev_results_payload.get("results", []):
+                if result.get("ida_version") == "92":
+                    prev_results_map[result["function"]] = result
+            
+            # Compare each function
+            improved = []
+            worsened = []
+            
+            for current_result in ida_92_results:
+                func_name = current_result["function"]
+                if func_name not in prev_results_map:
+                    continue
+                
+                prev_result = prev_results_map[func_name]
+                curr_final = current_result.get("final_count", 0)
+                prev_final = prev_result.get("final_count", 0)
+                total = current_result.get("total", 1)
+                
+                if curr_final > prev_final:
+                    improved.append((func_name, prev_final, curr_final, total))
+                elif curr_final < prev_final:
+                    worsened.append((func_name, prev_final, curr_final, total))
+            
+            # Display comparison results
+            if improved:
+                print(f"\n{COLOR_GREEN}IMPROVED FUNCTIONS:{COLOR_RESET}")
+                for func_name, prev_final, curr_final, total in sorted(improved, key=lambda x: x[2] - x[1], reverse=True):
+                    delta = curr_final - prev_final
+                    print(f"  {COLOR_GREEN}✓ {func_name}: {prev_final}/{total} → {curr_final}/{total} (+{delta}){COLOR_RESET}")
+            
+            if worsened:
+                print(f"\n{COLOR_RED}WORSENED FUNCTIONS:{COLOR_RESET}")
+                for func_name, prev_final, curr_final, total in sorted(worsened, key=lambda x: x[1] - x[2], reverse=True):
+                    delta = prev_final - curr_final
+                    print(f"  {COLOR_RED}✗ {func_name}: {prev_final}/{total} → {curr_final}/{total} (-{delta}){COLOR_RESET}")
+            
+            if not improved and not worsened:
+                print(f"\n{COLOR_YELLOW}No changes detected compared to previous results.{COLOR_RESET}")
+            
+        except Exception as e:
+            print(f"{COLOR_RED}Error comparing with previous results: {e}{COLOR_RESET}")
+
 
     # Persist results for downstream visualization
     results_payload = {

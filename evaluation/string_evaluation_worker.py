@@ -22,7 +22,8 @@ strings = json.loads(base64.b64decode(sys.argv[3]).decode('utf-8'))
 
 def decomp_contains(decomp, string):
     escaped_string = string.replace("\n", "\\n").replace("\r", "\\r").replace("\t", "\\t")
-    res = f'"{string}"' in decomp or f"// {string}" in decomp or f'"{escaped_string}"' in decomp or f"// {escaped_string}" in decomp
+    reverse_escaped = string.replace("\\n", "\n").replace("\\r", "\r").replace("\\t", "\t")
+    res = f'"{string}"' in decomp or f"// {string}" in decomp or f"// {reverse_escaped.strip()}" in decomp or f'"{escaped_string}"' in decomp or f"// {escaped_string}" in decomp
     if res:
         return res
     if "\n" in string:
@@ -40,6 +41,7 @@ try:
     import go_stringer
     import interface_detector
     import set_stdlib_funcproto
+    import go_slicer
 
     target_ea = idaapi.get_name_ea(0, function_name)
     if target_ea == idaapi.BADADDR:
@@ -50,6 +52,8 @@ try:
 
         set_stdlib_funcproto.main(False)
         decomp = ida_hexrays.decompile(target_ea, flags=ida_hexrays.DECOMP_NO_CACHE)
+        go_slicer.apply_slice_builder(decomp, False)
+        decomp = ida_hexrays.decompile(target_ea, flags=ida_hexrays.DECOMP_NO_CACHE)
         interface_detector.apply_interface_detector(decomp, False)
         decomp = ida_hexrays.decompile(target_ea, flags=ida_hexrays.DECOMP_NO_CACHE)
         go_stringer.apply_go_stringer(decomp, False)
@@ -58,7 +62,7 @@ try:
 
         final_string_count = sum(1 for s in strings if decomp_contains(decomp, s))
         missing = [s for s in strings if not decomp_contains(decomp, s)]
-        print(json.dumps({"success": True, "initial_count": initial_string_count, "final_count": final_string_count, "total": len(strings), "missing": missing}))
+        print(json.dumps({"success": True, "initial_count": initial_string_count, "final_count": final_string_count, "total": len(strings), "missing": sorted(missing)}))
 except Exception as e:
     print(json.dumps({"success": False, "error": str(e)}))
 finally:

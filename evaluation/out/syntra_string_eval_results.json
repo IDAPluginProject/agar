@@ -1,18 +1,53 @@
 {
   "test_binary": "syntra",
-  "generated_at": 1759991167.885526,
+  "generated_at": 1761641064.2805693,
   "results": [
+    {
+      "function": "main.determineAudioResource",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 3,
+      "missing": [
+        "assets/flag.mp3"
+      ]
+    },
     {
       "function": "main.determineAudioResource",
       "ida_version": "92",
       "success": true,
       "initial_count": 1,
-      "final_count": 1,
+      "final_count": 3,
       "total": 3,
-      "missing": [
-        "*.mp3",
-        "assets/music"
-      ]
+      "missing": []
+    },
+    {
+      "function": "main.main",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 4,
+      "final_count": 19,
+      "total": 19,
+      "missing": []
+    },
+    {
+      "function": "main.main",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 4,
+      "final_count": 19,
+      "total": 19,
+      "missing": []
+    },
+    {
+      "function": "main.main.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 4,
+      "missing": []
     },
     {
       "function": "main.main.func1",
@@ -25,7 +60,7 @@
     },
     {
       "function": "main.main.func2",
-      "ida_version": "92",
+      "ida_version": "91",
       "success": true,
       "initial_count": 2,
       "final_count": 5,
@@ -33,48 +68,8 @@
       "missing": []
     },
     {
-      "function": "main.main",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 4,
-      "final_count": 19,
-      "total": 19,
-      "missing": []
-    },
-    {
-      "function": "main.determineAudioResource",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 0,
-      "total": 3,
-      "missing": [
-        "*.mp3",
-        "assets/flag.mp3",
-        "assets/music"
-      ]
-    },
-    {
-      "function": "main.main.func1",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 4,
-      "total": 4,
-      "missing": []
-    },
-    {
-      "function": "main.main",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 4,
-      "final_count": 19,
-      "total": 19,
-      "missing": []
-    },
-    {
       "function": "main.main.func2",
-      "ida_version": "91",
+      "ida_version": "92",
       "success": true,
       "initial_count": 2,
       "final_count": 5,
@@ -84,12 +79,12 @@
   ],
   "totals": {
     "initial": 7,
-    "final": 29,
+    "final": 31,
     "total": 31
   },
   "ida_91_totals": {
     "initial": 6,
-    "final": 28,
+    "final": 30,
     "total": 31
   }
 }

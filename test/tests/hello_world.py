@@ -13,6 +13,7 @@ else:
 import idapro
 import go_stringer
 import interface_detector
+import go_slicer
 idapro.open_database(sys.argv[1], True)
 
 try:
@@ -26,6 +27,7 @@ try:
 
     def analysis():
         decomp = ida_hexrays.decompile(target_ea, flags=ida_hexrays.DECOMP_NO_CACHE)
+        go_slicer.apply_slice_builder(decomp, False)
         interface_detector.apply_interface_detector(decomp, False)
         decomp = ida_hexrays.decompile(target_ea, flags=ida_hexrays.DECOMP_NO_CACHE)
         go_stringer.apply_go_stringer(decomp, False)

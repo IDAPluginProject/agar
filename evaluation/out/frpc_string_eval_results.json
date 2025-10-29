@@ -1,80 +1,18 @@
 {
   "test_binary": "frpc",
-  "generated_at": 1759992142.8618548,
+  "generated_at": 1761640903.419512,
   "results": [
     {
-      "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers.func1",
-      "ida_version": "92",
+      "function": "github.com_fatedier_frp_client.NewProxyStatusResp",
+      "ida_version": "91",
       "success": true,
       "initial_count": 0,
       "final_count": 0,
-      "total": 1,
+      "total": 2,
       "missing": [
-        "/static/"
+        "tcp",
+        "udp"
       ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiStop",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig.func1",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiReload.func1",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiStop.func1",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 4,
-      "total": 4,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiStatus.func1",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig.func1",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
     },
     {
       "function": "github.com_fatedier_frp_client.NewProxyStatusResp",
@@ -84,82 +22,18 @@
       "final_count": 0,
       "total": 2,
       "missing": [
-        "udp",
-        "tcp"
+        "tcp",
+        "udp"
       ]
     },
     {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiStatus",
-      "ida_version": "92",
+      "function": "github.com_fatedier_frp_client._ptr_Control.handleNatHoleResp",
+      "ida_version": "91",
       "success": true,
       "initial_count": 0,
       "final_count": 1,
       "total": 1,
       "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 1,
-      "final_count": 11,
-      "total": 11,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.Open",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 3,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 5,
-      "total": 5,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiReload",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 4,
-      "total": 4,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Control.handleReqWorkConn",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 5,
-      "total": 5,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.realConnect",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 5,
-      "missing": [
-        "tcp",
-        "websocket",
-        "wss"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client.init",
-      "ida_version": "92",
-      "success": false,
-      "error": "Function github.com_fatedier_frp_client.init not found"
     },
     {
       "function": "github.com_fatedier_frp_client._ptr_Control.handleNatHoleResp",
@@ -171,19 +45,8 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client._ptr_Control.worker",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 0,
-      "total": 1,
-      "missing": [
-        "control message dispatcher exited"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.Run.func1",
-      "ida_version": "92",
+      "function": "github.com_fatedier_frp_client._ptr_Control.handleNewProxyResp",
+      "ida_version": "91",
       "success": true,
       "initial_count": 0,
       "final_count": 2,
@@ -200,17 +63,44 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client._ptr_Control.heartbeatWorker.func2",
-      "ida_version": "92",
+      "function": "github.com_fatedier_frp_client._ptr_Control.handlePong",
+      "ida_version": "91",
       "success": true,
       "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
+      "final_count": 2,
+      "total": 2,
       "missing": []
     },
     {
       "function": "github.com_fatedier_frp_client._ptr_Control.handlePong",
       "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Control.handleReqWorkConn",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Control.handleReqWorkConn",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Control.heartbeatWorker.func1",
+      "ida_version": "91",
       "success": true,
       "initial_count": 0,
       "final_count": 2,
@@ -227,8 +117,84 @@
       "missing": []
     },
     {
+      "function": "github.com_fatedier_frp_client._ptr_Control.heartbeatWorker.func2",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Control.heartbeatWorker.func2",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Control.worker",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 0,
+      "total": 1,
+      "missing": [
+        "control message dispatcher exited"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Control.worker",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 0,
+      "total": 1,
+      "missing": [
+        "control message dispatcher exited"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.Run",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
       "function": "github.com_fatedier_frp_client._ptr_Service.Run",
       "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.Run.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.Run.func1",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.Run.func2",
+      "ida_version": "91",
       "success": true,
       "initial_count": 0,
       "final_count": 2,
@@ -245,6 +211,195 @@
       "missing": []
     },
     {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 4,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 4,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig.func1",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig.func1",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiReload",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 4,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiReload",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 4,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiReload.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiReload.func1",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiStatus",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiStatus",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiStatus.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiStatus.func1",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiStop",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiStop",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiStop.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.apiStop.func1",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.keepControllerWorking.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
       "function": "github.com_fatedier_frp_client._ptr_Service.keepControllerWorking.func1",
       "ida_version": "92",
       "success": true,
@@ -254,14 +409,32 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_health.NewMonitor",
+      "function": "github.com_fatedier_frp_client._ptr_Service.login",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.login",
       "ida_version": "92",
       "success": true,
-      "initial_count": 1,
-      "final_count": 2,
+      "initial_count": 0,
+      "final_count": 3,
       "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client._ptr_Service.loopLoginUntilSuccess.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 4,
       "missing": [
-        "http"
+        "ssh-tunnel"
       ]
     },
     {
@@ -276,465 +449,22 @@
       ]
     },
     {
-      "function": "github.com_fatedier_frp_client_health._ptr_Monitor.checkWorker",
-      "ida_version": "92",
+      "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
+      "ida_version": "91",
       "success": true,
-      "initial_count": 0,
-      "final_count": 4,
-      "total": 4,
+      "initial_count": 1,
+      "final_count": 11,
+      "total": 11,
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doCheck",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 0,
-      "total": 2,
-      "missing": [
-        "http",
-        "tcp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.login",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 3,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doTCPCheck",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Manager.StartProxy",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doHTTPCheck",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 3,
-      "missing": [
-        "GET"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.statusFailedCallback",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.statusNormalCallback",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy.NewWrapper",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.SetRunningStatus",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.InWorkConn",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.Run",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 0,
-      "total": 1,
-      "missing": [
-        "udp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func3",
+      "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
       "ida_version": "92",
       "success": true,
       "initial_count": 1,
-      "final_count": 3,
-      "total": 3,
+      "final_count": 11,
+      "total": 11,
       "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Manager.UpdateAll",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func4.1",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.checkWorker",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func5",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 1,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func4",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 1,
-      "final_count": 3,
-      "total": 3,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.Run",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 0,
-      "total": 1,
-      "missing": [
-        "udp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func2.1",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func2",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func3.1",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func4",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func3",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 3,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByKCP",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 4,
-      "total": 5,
-      "missing": [
-        "udp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByQUIC",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 5,
-      "total": 5,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.Run",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 0,
-      "total": 1,
-      "missing": [
-        "tcp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.worker",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.internalConnWorker",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.dispatcher",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1.2",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 3,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.handleConn",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 5,
-      "total": 5,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.Run",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 4,
-      "missing": [
-        "udp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func2",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 3,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.keepVisitorsRunning",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 1,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.startVisitor",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 3,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.TransferConn",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.worker",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.getNewVisitorConn",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 5,
-      "total": 5,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.UpdateAll",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.Run",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 0,
-      "total": 2,
-      "missing": [
-        "kcp",
-        "tcp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.internalConnWorker",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.keepTunnelOpenWorker",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 1,
-      "final_count": 3,
-      "total": 3,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.openTunnel",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_KCPTunnelSession.Init",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 4,
-      "missing": [
-        "udp"
-      ]
     },
     {
       "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers.func1",
@@ -748,144 +478,15 @@
       ]
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_QUICTunnelSession.Init",
+      "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers.func1",
       "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 3,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 1,
-      "final_count": 9,
-      "total": 10,
-      "missing": [
-        "kcp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.registerRouteHandlers",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 1,
-      "final_count": 11,
-      "total": 11,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiStop",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiReload.func1",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiReload",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 4,
-      "total": 4,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiStop.func1",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
-      "ida_version": "92",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 7,
-      "total": 7,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client.NewProxyStatusResp",
-      "ida_version": "91",
       "success": true,
       "initial_count": 0,
       "final_count": 0,
-      "total": 2,
+      "total": 1,
       "missing": [
-        "udp",
-        "tcp"
+        "/static/"
       ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiStatus",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiStatus.func1",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 4,
-      "total": 4,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiGetConfig.func1",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig.func1",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.apiPutConfig",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 5,
-      "total": 5,
-      "missing": []
     },
     {
       "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.Open",
@@ -897,75 +498,13 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client._ptr_Control.handleNatHoleResp",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.Open",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
+      "final_count": 3,
+      "total": 3,
       "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Control.handlePong",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Control.handleNewProxyResp",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client.init",
-      "ida_version": "91",
-      "success": false,
-      "error": "Function github.com_fatedier_frp_client.init not found"
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Control.heartbeatWorker.func2",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Control.handleReqWorkConn",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 5,
-      "total": 5,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Control.heartbeatWorker.func1",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Control.worker",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 0,
-      "total": 1,
-      "missing": [
-        "control message dispatcher exited"
-      ]
     },
     {
       "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.realConnect",
@@ -981,40 +520,29 @@
       ]
     },
     {
-      "function": "github.com_fatedier_frp_client._ptr_Service.Run",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client._ptr_defaultConnectorImpl.realConnect",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
       "final_count": 2,
-      "total": 2,
-      "missing": []
+      "total": 5,
+      "missing": [
+        "tcp",
+        "websocket",
+        "wss"
+      ]
     },
     {
-      "function": "github.com_fatedier_frp_client._ptr_Service.Run.func1",
+      "function": "github.com_fatedier_frp_client.init",
       "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
+      "success": false,
+      "error": "Function github.com_fatedier_frp_client.init not found"
     },
     {
-      "function": "github.com_fatedier_frp_client._ptr_Service.Run.func2",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.keepControllerWorking.func1",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
+      "function": "github.com_fatedier_frp_client.init",
+      "ida_version": "92",
+      "success": false,
+      "error": "Function github.com_fatedier_frp_client.init not found"
     },
     {
       "function": "github.com_fatedier_frp_client_health.NewMonitor",
@@ -1028,8 +556,28 @@
       ]
     },
     {
+      "function": "github.com_fatedier_frp_client_health.NewMonitor",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 2,
+      "total": 3,
+      "missing": [
+        "http"
+      ]
+    },
+    {
       "function": "github.com_fatedier_frp_client_health._ptr_Monitor.checkWorker",
       "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 4,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_health._ptr_Monitor.checkWorker",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
       "final_count": 4,
@@ -1049,23 +597,15 @@
       ]
     },
     {
-      "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doTCPCheck",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doCheck",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.loopLoginUntilSuccess.func1",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 4,
+      "final_count": 0,
+      "total": 2,
       "missing": [
-        "ssh-tunnel"
+        "http",
+        "tcp"
       ]
     },
     {
@@ -1080,14 +620,71 @@
       ]
     },
     {
+      "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doHTTPCheck",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 3,
+      "missing": [
+        "GET"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doTCPCheck",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_health._ptr_Monitor.doTCPCheck",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy.NewWrapper",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy.NewWrapper",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 10,
+      "total": 11,
+      "missing": [
+        "tcp"
+      ]
+    },
+    {
       "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
       "ida_version": "92",
       "success": true,
       "initial_count": 1,
-      "final_count": 9,
+      "final_count": 10,
       "total": 11,
       "missing": [
-        "127.0.0.1",
         "tcp"
       ]
     },
@@ -1101,21 +698,12 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Manager.StartProxy",
       "ida_version": "92",
       "success": true,
-      "initial_count": 1,
-      "final_count": 11,
-      "total": 11,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client._ptr_Service.login",
-      "ida_version": "91",
-      "success": true,
       "initial_count": 0,
-      "final_count": 3,
-      "total": 3,
+      "final_count": 1,
+      "total": 1,
       "missing": []
     },
     {
@@ -1128,16 +716,16 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy.NewWrapper",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Manager.UpdateAll",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
+      "final_count": 2,
+      "total": 2,
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.SetRunningStatus",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn",
       "ida_version": "91",
       "success": true,
       "initial_count": 0,
@@ -1146,33 +734,13 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.statusNormalCallback",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
+      "final_count": 2,
+      "total": 2,
       "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.statusFailedCallback",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.Run",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 0,
-      "total": 1,
-      "missing": [
-        "udp"
-      ]
     },
     {
       "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func3",
@@ -1184,12 +752,30 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.InWorkConn",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func3",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func4",
       "ida_version": "91",
       "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
+      "initial_count": 1,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func4",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 3,
+      "total": 3,
       "missing": []
     },
     {
@@ -1202,8 +788,8 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.checkWorker",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func4.1",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
       "final_count": 1,
@@ -1220,7 +806,16 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.Run",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func5",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.Run",
       "ida_version": "91",
       "success": true,
       "initial_count": 0,
@@ -1231,12 +826,32 @@
       ]
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn.func4",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.Run",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 0,
+      "total": 1,
+      "missing": [
+        "udp"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn",
       "ida_version": "91",
       "success": true,
-      "initial_count": 1,
-      "final_count": 3,
-      "total": 3,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
       "missing": []
     },
     {
@@ -1249,7 +864,16 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func3.1",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func2",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func2.1",
       "ida_version": "91",
       "success": true,
       "initial_count": 0,
@@ -1259,7 +883,7 @@
     },
     {
       "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func2.1",
-      "ida_version": "91",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
       "final_count": 1,
@@ -1276,12 +900,30 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_SUDPProxy.InWorkConn",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func3",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func3.1",
       "ida_version": "91",
       "success": true,
       "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func3.1",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
       "missing": []
     },
     {
@@ -1294,13 +936,147 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByQUIC",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn.func4",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.Run",
       "ida_version": "91",
       "success": true,
       "initial_count": 0,
-      "final_count": 5,
-      "total": 5,
+      "final_count": 0,
+      "total": 1,
+      "missing": [
+        "udp"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.Run",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 0,
+      "total": 1,
+      "missing": [
+        "udp"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.InWorkConn",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
       "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.InWorkConn",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.SetRunningStatus",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.SetRunningStatus",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.checkWorker",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.checkWorker",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.statusFailedCallback",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.statusFailedCallback",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.statusNormalCallback",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_Wrapper.statusNormalCallback",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 9,
+      "total": 10,
+      "missing": [
+        "kcp"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 9,
+      "total": 10,
+      "missing": [
+        "kcp"
+      ]
     },
     {
       "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByKCP",
@@ -1314,12 +1090,144 @@
       ]
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_UDPProxy.InWorkConn",
+      "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByKCP",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 4,
+      "total": 5,
+      "missing": [
+        "udp"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByQUIC",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.listenByQUIC",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_KCPTunnelSession.Init",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 4,
+      "missing": [
+        "udp"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_KCPTunnelSession.Init",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 4,
+      "missing": [
+        "udp"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.TransferConn",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.TransferConn",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.UpdateAll",
       "ida_version": "91",
       "success": true,
       "initial_count": 0,
       "final_count": 2,
       "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.UpdateAll",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.keepVisitorsRunning",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.keepVisitorsRunning",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.startVisitor",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.startVisitor",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_QUICTunnelSession.Init",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_QUICTunnelSession.Init",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
       "missing": []
     },
     {
@@ -1334,12 +1242,32 @@
       ]
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.worker",
+      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.Run",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 0,
+      "total": 1,
+      "missing": [
+        "tcp"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.handleConn",
       "ida_version": "91",
       "success": true,
       "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.handleConn",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
       "missing": []
     },
     {
@@ -1352,44 +1280,26 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.internalConnWorker",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
+      "final_count": 1,
+      "total": 1,
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1",
+      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.worker",
       "ida_version": "91",
       "success": true,
       "initial_count": 0,
-      "final_count": 3,
-      "total": 3,
+      "final_count": 1,
+      "total": 1,
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.dispatcher",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.handleConn",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 5,
-      "total": 5,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1.2",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client_visitor._ptr_STCPVisitor.worker",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
       "final_count": 1,
@@ -1408,6 +1318,107 @@
       ]
     },
     {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.Run",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 4,
+      "missing": [
+        "udp"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.dispatcher",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.dispatcher",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.getNewVisitorConn",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.getNewVisitorConn",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 5,
+      "total": 5,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 2,
+      "total": 2,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1.2",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func1.2",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
+      "missing": []
+    },
+    {
       "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func2",
       "ida_version": "91",
       "success": true,
@@ -1417,39 +1428,12 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.TransferConn",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.startVisitor",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.worker.func2",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
       "final_count": 3,
       "total": 3,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.worker",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 1,
-      "total": 1,
-      "missing": []
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.keepVisitorsRunning",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 1,
-      "final_count": 2,
-      "total": 2,
       "missing": []
     },
     {
@@ -1465,12 +1449,33 @@
       ]
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_SUDPVisitor.getNewVisitorConn",
+      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.Run",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 0,
+      "total": 2,
+      "missing": [
+        "kcp",
+        "tcp"
+      ]
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
       "ida_version": "91",
       "success": true,
       "initial_count": 0,
-      "final_count": 5,
-      "total": 5,
+      "final_count": 7,
+      "total": 7,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 0,
+      "final_count": 7,
+      "total": 7,
       "missing": []
     },
     {
@@ -1483,12 +1488,12 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_Manager.UpdateAll",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.internalConnWorker",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
-      "final_count": 2,
-      "total": 2,
+      "final_count": 1,
+      "total": 1,
       "missing": []
     },
     {
@@ -1501,6 +1506,33 @@
       "missing": []
     },
     {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.keepTunnelOpenWorker",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 3,
+      "total": 3,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+      "ida_version": "91",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 11,
+      "total": 11,
+      "missing": []
+    },
+    {
+      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
+      "ida_version": "92",
+      "success": true,
+      "initial_count": 1,
+      "final_count": 11,
+      "total": 11,
+      "missing": []
+    },
+    {
       "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.openTunnel",
       "ida_version": "91",
       "success": true,
@@ -1510,75 +1542,41 @@
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_KCPTunnelSession.Init",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.openTunnel",
+      "ida_version": "92",
       "success": true,
       "initial_count": 0,
-      "final_count": 3,
-      "total": 4,
-      "missing": [
-        "udp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_QUICTunnelSession.Init",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 0,
-      "final_count": 3,
-      "total": 3,
+      "final_count": 2,
+      "total": 2,
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.handleConn",
+      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.worker",
       "ida_version": "91",
       "success": true,
       "initial_count": 0,
-      "final_count": 7,
-      "total": 7,
+      "final_count": 1,
+      "total": 1,
       "missing": []
     },
     {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_XTCPProxy.InWorkConn",
-      "ida_version": "91",
+      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.worker",
+      "ida_version": "92",
       "success": true,
-      "initial_count": 1,
-      "final_count": 9,
-      "total": 10,
-      "missing": [
-        "kcp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client_proxy._ptr_BaseProxy.HandleTCPWorkConnection",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 1,
-      "final_count": 9,
-      "total": 11,
-      "missing": [
-        "127.0.0.1",
-        "tcp"
-      ]
-    },
-    {
-      "function": "github.com_fatedier_frp_client_visitor._ptr_XTCPVisitor.makeNatHole",
-      "ida_version": "91",
-      "success": true,
-      "initial_count": 1,
-      "final_count": 11,
-      "total": 11,
+      "initial_count": 0,
+      "final_count": 1,
+      "total": 1,
       "missing": []
     }
   ],
   "totals": {
     "initial": 10,
-    "final": 194,
+    "final": 195,
     "total": 217
   },
   "ida_91_totals": {
     "initial": 10,
-    "final": 194,
+    "final": 195,
     "total": 217
   }
 }
