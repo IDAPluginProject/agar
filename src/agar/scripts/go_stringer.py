@@ -91,8 +91,11 @@ class cvisitor(ida_hexrays.ctree_visitor_t):
             base = self.get_concrete(expr.x)
             if not base:
                 return base
-
-            return base + expr.y.numval() * type_size
+            
+            index_value = self.get_concrete(expr.y)
+            if index_value is None:
+                return None
+            return base + index_value * type_size
         return None
     
     def find_var(self, expr: ida_hexrays.cexpr_t) -> ida_hexrays.cexpr_t:
@@ -148,6 +151,8 @@ def handle_string(code_addr, str_addr, length, do_comment=True):
     idc.create_strlit(str_addr, str_addr + length)
     if do_comment:
         string = idc.get_strlit_contents(str_addr, length, idc.STRTYPE_C)
+        if string is None:
+            return
         string = string.decode("utf-8", errors="ignore")
         tl = idaapi.treeloc_t()
         tl.ea = code_addr
@@ -171,6 +176,8 @@ def handle_type_2_string(memref: MemRef):
 
 
 def apply_go_stringer(func, yap=True):
+    if func is None:
+        return
     r = build_reftable(func)
     yap and print("References found:", len(r))
     yap and print(r)

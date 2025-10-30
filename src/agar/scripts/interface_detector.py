@@ -87,6 +87,8 @@ def apply_interface_detector(func, yap=True):
                 yap and print("Skipping", prev[0])
         yap and print("Iteration", i)
         c = cvisitor(yap)
+        if func is None:
+            break
         c.apply_to(func.body, None)
         yap and print(c.vars)
         changed = False
@@ -110,7 +112,7 @@ def apply_interface_detector(func, yap=True):
             yap and print("Done")
             return c.interface_vars
 
-        func = ida_hexrays.decompile(func.entry_ea, flags=ida_hexrays.DECOMP_NO_CACHE)
+        func = ida_hexrays.decompile(func.entry_ea)
 
 def main():
     func = ida_hexrays.decompile(idc.here(), flags=ida_hexrays.DECOMP_NO_CACHE)

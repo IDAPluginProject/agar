@@ -39,6 +39,7 @@ def main(yap=True):
     fail_count = 0
     func_not_exist = 0
     total_count = 0
+    parse_type.cache_clear()
     for func_name, func_decl in data.items():
         func_addr = idc.get_name_ea_simple(func_name)
         if func_addr == idc.BADADDR:

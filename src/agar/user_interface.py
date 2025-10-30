@@ -45,7 +45,7 @@ def get_all_functions() -> trie.PrefixTrie:
     for func_ea in idautils.Functions():
         func_name = idc.get_func_name(func_ea)
         if func_name.split(".")[0] not in internal_packages:
-            if not any(func_name.startswith(bad_prefix) for bad_prefix in ["go:", "internal_", "_rt", "debug"]):
+            if not any(func_name.startswith(bad_prefix) for bad_prefix in ["go:", "internal_", "_rt", "debug", "crypto_internal"]):
                 t.insert(func_name)
                 x.add(func_name.split(".")[0])
     # print(x)
@@ -182,6 +182,7 @@ class AgarForm(QDialog):
             self.c.has_parsed_itabs = True
             idaapi.auto_wait()
             QApplication.processEvents()
+        self.update_progress(0, len(self.functions_to_process))
 
         self.run_slice_rebuild = self.enableSliceRebuild.isChecked()
         self.run_interface_rebuild = self.enableInterfaceRebuild.isChecked()
@@ -218,14 +219,26 @@ class AgarForm(QDialog):
         print(f"[AGAR] Processing function: {func_name}")
         
         func = ida_hexrays.decompile(idc.get_name_ea_simple(func_name), flags=ida_hexrays.DECOMP_NO_CACHE)
-        if self.run_interface_rebuild:
+        decompilation_failed = False
+        if func is None:
+            decompilation_failed = True
+        if not decompilation_failed and self.run_interface_rebuild:
             interface_detector.apply_interface_detector(func, yap=False)
-        if self.run_slice_rebuild:
+        if not decompilation_failed and self.run_slice_rebuild:
             func = ida_hexrays.decompile(func.entry_ea, flags=ida_hexrays.DECOMP_NO_CACHE)
-            go_slicer.apply_slice_builder(func, yap=False)
-        if self.run_string_detection:
+            if func is not None:
+                go_slicer.apply_slice_builder(func, yap=False)
+            else:
+                decompilation_failed = True
+        if not decompilation_failed and self.run_string_detection:
             func = ida_hexrays.decompile(func.entry_ea, flags=ida_hexrays.DECOMP_NO_CACHE)
-            go_stringer.apply_go_stringer(func, yap=False)
+            if func is not None:
+                go_stringer.apply_go_stringer(func, yap=False)
+            else:
+                decompilation_failed = True
+        
+        if decompilation_failed:
+            print(f"[AGAR] Warning: Could not decompile function {func_name}, skipping.")
 
         self.current_function_index += 1
         self.update_progress(self.current_function_index, len(self.functions_to_process))

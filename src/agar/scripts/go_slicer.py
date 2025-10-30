@@ -140,6 +140,8 @@ def build_reftable(func):
     return c.refs
 
 def apply_slice_builder(func, yap=True):
+    if func is None:
+        return
     r = build_reftable(func)
     yap and print("References found:", len(r))
     yap and print(r)
