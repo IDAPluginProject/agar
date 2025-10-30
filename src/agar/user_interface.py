@@ -5,6 +5,7 @@ import trie
 import idautils
 import ida_funcs
 import ida_hexrays
+import ida_kernwin
 import idaapi
 import idc
 import json
@@ -61,6 +62,9 @@ class AgarForm(QDialog):
         self.resize(400, 300)
         self.functions = get_all_functions()
         self.func = ida_funcs.get_func(idc.here())
+        if not self.func:
+            self.show_error_form()
+            return
         self.function_name = idc.get_name(self.func.start_ea)
         self.cancelled = False
         self.processing = False
@@ -159,6 +163,27 @@ class AgarForm(QDialog):
         
         self.update_ok_button_state()
 
+    def show_error_form(self):
+        layout = QVBoxLayout(self)
+        
+        message_label = QLabel("⚠️ Please place the cursor inside a function to use AGAR.")
+        message_label.setWordWrap(True)
+        message_label.setStyleSheet("QLabel { padding: 20px; font-size: 11pt; }")
+        layout.addWidget(message_label)
+        
+        layout.addStretch()
+        
+        button_layout = QHBoxLayout()
+        button_layout.addStretch()
+        ok_button = QPushButton("OK")
+        ok_button.clicked.connect(self.reject)
+        ok_button.setDefault(True)
+        button_layout.addWidget(ok_button)
+        button_layout.addStretch()
+        layout.addLayout(button_layout)
+        
+        self.resize(350, 150)
+
     def on_ok_clicked(self):
         self.ok_button.setEnabled(False)
         self.progress_bar.setVisible(True)
@@ -182,7 +207,6 @@ class AgarForm(QDialog):
             self.c.has_parsed_itabs = True
             idaapi.auto_wait()
             QApplication.processEvents()
-        self.update_progress(0, len(self.functions_to_process))
 
         self.run_slice_rebuild = self.enableSliceRebuild.isChecked()
         self.run_interface_rebuild = self.enableInterfaceRebuild.isChecked()
@@ -203,6 +227,8 @@ class AgarForm(QDialog):
         self.current_function_index = 0
         self.processing = True
         self.cancelled = False
+
+        self.update_progress(0, len(self.functions_to_process))
         
         QTimer.singleShot(0, self.process_next_function)
 
