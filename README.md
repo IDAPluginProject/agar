@@ -4,6 +4,8 @@ Assisting Go Analysis and Reversing (AGAR) correctly detects **5 to 20x more str
 
 You can also use AGAR to demystify method calls on interface types.
 
+As it relies on the function's AST and type information, AGAR may not work on unstripped or obfuscated Go binaries (see [tests](#tests)).
+
 ## Benchmarks
 <img src="./img/string_eval_all.png" width="80%" />
 
@@ -15,13 +17,23 @@ Tested on
 You can read the test evaluation script [here](./evaluation/string_evaluation_worker.py).
 It runs the following scripts in sequence:
 1. Function retyper
-2. Interface detector
-3. Stringer
+2. Slice rebuilder
+3. Interface rebuilder
+4. String detector
+
+## Usage
+### String/interface/struct detection and rebuilding
+1. Press `Ctrl + Shift + G` or select `AGAR` from the plugins menu.
+2. Specify the scope AGAR should work on. Note that each function in scope will be decompiled multiple times, so running analysis on all functions will take some time.
+3. Click `OK` to run AGAR
+
+### Interface specializer
+1. Right click on the interface type (struct field or local variable) and select "Specialize interface"
+2. Select the appropriate concrete implementation from the dropdown
 
 ## Features
 
 ### Standard Library Function retyper
-**Usage:** `Ctrl+Shift+G` + select `Function retyper`  
 
 **Before:**
 ![alt text](./img/image.png)
@@ -30,8 +42,6 @@ It runs the following scripts in sequence:
 ![alt text](./img/image-1.png)
 
 ### Interface detection and retyping
-**Usage:** `Ctrl+Shift+G` + select `Interface detector`  
-
 **Before:**  
 ![alt text](./img/interface_detect_before.png)
 
@@ -39,8 +49,6 @@ It runs the following scripts in sequence:
 ![alt text](./img/interface_detect_after.png)
 
 ### String detection
-**Usage:** `Ctrl+Shift+G` + select `Stringer`  
-
 **Before:**  
 ![alt text](./img/string_before.png)
 
@@ -48,10 +56,6 @@ It runs the following scripts in sequence:
 ![alt text](./img/string_after.png)
 
 ### Interface specializer
-**Usage:**
-1. Find a struct that contains an interface type
-2. Right click on the interface type field and select "Specialize interface"
-3. Select the appropriate concrete implementation from the dropdown
 
 **Before:**  
 ![alt text](./img/specialization_before.png)
