@@ -22,7 +22,7 @@ It runs the following scripts in sequence:
 4. String detector
 
 ## Usage
-### String/interface/struct detection and rebuilding
+### String/interface/slice detection and rebuilding
 
 https://github.com/user-attachments/assets/8d7ef373-4f73-42c9-bffb-7add26cc0e84
 
